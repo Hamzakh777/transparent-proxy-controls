@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
+// When working with Proxies the `implementation` can't have a constructor
+// because we want all the data to be stored in the Proxy
+
 contract Box {
   uint256 private value;
 
